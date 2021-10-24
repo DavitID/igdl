@@ -1,0 +1,24 @@
+{% import 'core.html' as inti %}
+{% import 'index.html' as in %}
+<html>
+  <head>
+    {{ inti.linke(lin) }}
+    <title>Ig Downloader</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br><br>
+    {% for img, src in jadi %}
+      <div class="container col-md-4">
+        <center>
+          <img class="img-fluid image-size rounded border" src="{{ img }}"/>
+        </center>
+      </div>
+      <center><br>
+        <button type="button" class="btn btn-primary rounded"><a class="font-weight-bold text-white" href="{{ src }}">Download</a></button>
+      </center><br><br>
+    {% endfor %}
+    {{ inti.wm(foot) }}
+    {{ inti.js(anim) }}
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.linke(link) }}
+    <title>Error</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br><br>
+    <center>
+      <img class="img-fluid image-size rounded" src="{{ url_for('static', filename='warn.png') }}"/>    </center><br>
+    <div class="container col-md-12">
+      <div class="card">
+        <div class="card-body bg-danger">
+          <center>
+            <p class="h4 text-white font-weight-bold">Invalid URL</p>
+          </center>
+        </div>
+      </div>
+    </div><br>
+    <center>
+      <div class="container">
+        <a href="{{ url_for('index') }}">
+          <button type="button" class="btn btn-primary font-weight-bold col-md-12">Back to home</button>
+        </a>
+      </div>
+    </center>
+    {{ inti.wm(foot) }}
+    {{ inti.js(anim) }}
+  </body>
+<html>

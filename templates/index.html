@@ -1,0 +1,29 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.linke(link) }}
+    <title>Ig Downloader</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br>
+    <center>
+      <img class="img-fluid image-size" src="{{ url_for('static', filename='insta.png') }}"/>
+    </center><br>
+    <form method="POST">
+      <div class="form-group container col-md-12">
+        <input class="form-control" name="uri" placeholder="Paste URL instagram disini..."></input>
+      </div>
+      <div class="col-md-12">
+        <center>
+          <button type="submit" class="col-md-12 btn btn-primary" target="_blank">Unduh</button>
+        </center>
+      </div>
+    </form>
+
+    {{ inti.wm(foot) }}
+
+    {{ inti.js(anim) }}
+  </body>
+</html>
+

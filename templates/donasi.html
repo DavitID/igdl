@@ -1,0 +1,25 @@
+{% import 'core.html' as inti %}
+
+<html>
+  <head>
+    {{ inti.linke(link) }}
+    <title>Ig Downloader</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br><br>
+    <center>
+      <img class="img-fluid image-size rounded" src="{{ url_for('static', filename='icon.svg') }}"/
+    </center><br><br>
+    <div class="container col-md-12">
+      <div class="card">
+        <div class="card-body bg-primary">
+          <h4 class="text-white font-weight-bold">Donasi</h4>
+          <a class="font-weight-bold text-white h5" href="https://saweria.co/AkiraDev">https://saweria.co/AkiraDev</a>
+        </div>
+      </div>
+    </div>
+    {{ inti.wm(foot) }}
+    {{ inti.js(anim) }}
+  </body>
+</html>

@@ -1,0 +1,21 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.linke(link) }}
+    <title>Not Found</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br><br>
+    <center>
+      <img class="img-fluid image-size rounded" src="{{ url_for('static', filename='not_found.png') }}"/>
+    </center><br>
+    <div class="container">
+      <a href="{{ url_for('index') }}">
+        <button type="button" class="btn btn-primary font-weight-bold col-md-12">Back to home</button>
+      </a>
+    </div>
+    {{ inti.wm(foot) }}
+    {{ inti.js(anim) }}
+  </body>
+</html>

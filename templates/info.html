@@ -1,0 +1,24 @@
+{% import 'core.html' as inti %}
+<html>
+  <head>
+    {{ inti.linke(link) }}
+    <title>Ig Downloader</title>
+  </head>
+  <body>
+    {{ inti.headers(navbar) }}
+    <br>
+    <div class="container col-md-12">
+      <div class="jumbotron bg-primary">
+        <h2 class="display-5 text-white font-weight-bold">About</h2>
+        <hr class="display-4 bg-white"/>
+        <p class="lead font-weight-bold text-white">Web ini dibuat dengan tujuan pembelajaran tanpa ada hal apapun yang berkaitan dengan cyber crime atau tindakan kejahatan lain.web ini dibangun dengan python3 dan frameworknya yaitu flask dan beberapa library yang ada</p><br>
+        <p class="lead font-weight-bold text-white">Dokumentasi: </p>
+        <a class="text-white font-weight-bold" href="https://palletsprojects.com/p/flask"><i class="fas fa-book"></i> flask</a><br>
+        <a class="text-white font-weight-bold" href="https://requests.readthedocs.io"><i class="fas fa-book"></i> requests</a><br>
+        <a class="text-white font-weight-bold" href="https://pypi.python.org/pypi/beautifulsoup4"><i class="fas fa-book"></i> BeautifulSoup4</a>
+      </div>
+    </div>
+    {{ inti.wm(foot) }}
+    {{ inti.js(anim) }}
+  </body>
+</html>
